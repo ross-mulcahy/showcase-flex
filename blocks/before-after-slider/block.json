@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "showcase-flex/before-after-slider",
+	"version": "1.0.0",
+	"title": "Before/After Slider",
+	"category": "showcase-flex",
+	"icon": "image-flip-horizontal",
+	"description": "Draggable comparison slider for two images, proving interactive widgets work in classic themes.",
+	"keywords": ["before", "after", "slider", "comparison", "interactive"],
+	"textdomain": "showcase-flex",
+	"attributes": {
+		"beforeImage": { "type": "string", "default": "" },
+		"afterImage": { "type": "string", "default": "" },
+		"beforeLabel": { "type": "string", "default": "Before" },
+		"afterLabel": { "type": "string", "default": "After" }
+	},
+	"supports": { "html": false, "align": ["wide"] },
+	"render": "file:./render.php"
+}

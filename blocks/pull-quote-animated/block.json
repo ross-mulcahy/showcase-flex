@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "showcase-flex/pull-quote-animated",
+	"version": "1.0.0",
+	"title": "Animated Pull Quote",
+	"category": "showcase-flex",
+	"icon": "format-quote",
+	"description": "Large editorial pull quote with ambient background animations — gradient shift and floating shapes.",
+	"keywords": ["quote", "pullquote", "editorial", "animation"],
+	"textdomain": "showcase-flex",
+	"attributes": {
+		"quote": { "type": "string", "default": "" },
+		"attribution": { "type": "string", "default": "" }
+	},
+	"supports": { "html": false, "align": ["wide", "full"] },
+	"render": "file:./render.php"
+}

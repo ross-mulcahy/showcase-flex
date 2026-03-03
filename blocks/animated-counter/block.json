@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "showcase-flex/animated-counter",
+	"version": "1.0.0",
+	"title": "Animated Counter Section",
+	"category": "showcase-flex",
+	"icon": "chart-bar",
+	"description": "Grid of animated number counters that animate when scrolled into view.",
+	"keywords": ["counter", "stats", "numbers", "data"],
+	"textdomain": "showcase-flex",
+	"attributes": {
+		"counters": {
+			"type": "array",
+			"default": [
+				{ "value": 500, "suffix": "+", "label": "Newsrooms trust WordPress VIP" },
+				{ "value": 2, "suffix": "B+", "label": "Monthly pageviews served" },
+				{ "value": 99, "suffix": ".9%", "label": "Uptime SLA guaranteed" },
+				{ "value": 50, "suffix": "ms", "label": "Average server response time" }
+			]
+		}
+	},
+	"supports": { "html": false, "align": ["wide", "full"] },
+	"render": "file:./render.php"
+}
