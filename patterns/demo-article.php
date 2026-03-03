@@ -150,7 +150,7 @@
 <h3 class="wp-block-heading sf-section-header sf-animate sf-animate--fade-up" style="margin-bottom:var(--wp--preset--spacing--50)">Related Stories</h3>
 <!-- /wp:heading -->
 
-<!-- wp:group {"className":"sf-related-grid sf-stagger","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<!-- wp:group {"className":"sf-related-grid sf-stagger","layout":{"type":"default"}} -->
 <div class="wp-block-group sf-related-grid sf-stagger">
 
 <!-- wp:group {"className":"sf-related-card sf-animate sf-animate--fade-up","layout":{"type":"constrained"}} -->
