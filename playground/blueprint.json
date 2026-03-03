@@ -12,8 +12,7 @@
       "themeData": {
         "resource": "git:directory",
         "url": "https://github.com/ross-mulcahy/showcase-flex",
-        "ref": "main",
-        "path": "."
+        "ref": "main"
       },
       "options": {
         "activate": true
@@ -22,5 +21,6 @@
         "caption": "Installing Showcase Flex theme..."
       }
     }
-  ]
+  ],
+  "features": {}
 }
