@@ -41,18 +41,6 @@ function enqueue_assets(): void {
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_assets' );
 
-/**
- * Enqueue editor-specific styles so block previews match the front end.
- */
-function enqueue_editor_assets(): void {
-	wp_enqueue_style(
-		'showcase-flex-editor',
-		SHOWCASE_FLEX_URI . '/assets/css/theme.css',
-		[],
-		SHOWCASE_FLEX_VERSION
-	);
-}
-add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\\enqueue_editor_assets' );
 
 /**
  * Register all custom blocks from the /blocks directory.
@@ -62,7 +50,7 @@ function register_blocks(): void {
 	wp_register_script(
 		'showcase-flex-editor',
 		SHOWCASE_FLEX_URI . '/assets/js/editor.js',
-		[ 'wp-blocks', 'wp-element', 'wp-block-editor', 'wp-server-side-render' ],
+		[ 'wp-blocks', 'wp-element', 'wp-block-editor', 'wp-components', 'wp-i18n' ],
 		SHOWCASE_FLEX_VERSION,
 		true
 	);
@@ -121,6 +109,9 @@ function theme_setup(): void {
 		'style',
 		'script',
 	] );
+
+	// Load theme styles inside the editor iframe so block previews match the front end.
+	add_editor_style( 'assets/css/theme.css' );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\theme_setup' );
 
