@@ -9,6 +9,7 @@
 	"description": "Sticky top navigation with section links, active highlighting, and dark mode toggle.",
 	"keywords": ["navigation", "sticky", "menu", "scroll"],
 	"textdomain": "showcase-flex",
+	"editorScript": "showcase-flex-editor",
 	"attributes": {
 		"brand": { "type": "string", "default": "The Deep Current" },
 		"sections": {

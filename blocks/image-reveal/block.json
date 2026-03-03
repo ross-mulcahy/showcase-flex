@@ -9,6 +9,7 @@
 	"description": "Image that unveils with a clip-path wipe and blur-to-sharp transition on scroll.",
 	"keywords": ["image", "reveal", "animation", "scroll"],
 	"textdomain": "showcase-flex",
+	"editorScript": "showcase-flex-editor",
 	"attributes": {
 		"imageUrl": { "type": "string", "default": "" },
 		"alt": { "type": "string", "default": "" },

@@ -9,6 +9,7 @@
 	"description": "Section with muted autoplaying background video and text overlay.",
 	"keywords": ["video", "background", "media", "cinematic"],
 	"textdomain": "showcase-flex",
+	"editorScript": "showcase-flex-editor",
 	"attributes": {
 		"videoUrl": { "type": "string", "default": "" },
 		"posterUrl": { "type": "string", "default": "" },

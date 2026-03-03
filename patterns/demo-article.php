@@ -15,7 +15,7 @@
 
 <!-- wp:showcase-flex/parallax-hero {"imageUrl":"https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1920&q=80","kicker":"Investigation","title":"The Deep Current","subtitle":"How Climate Data Is Reshaping Coastal Cities","byline":"By Elena Vasquez & Michael Torres","dateline":"March 3, 2026 · Washington, D.C."} /-->
 
-<!-- wp:group {"align":"wide","className":"sf-article-body sf-section","layout":{"type":"constrained","contentSize":"720px"}} -->
+<!-- wp:group {"anchor":"the-warning","align":"wide","className":"sf-article-body sf-section","layout":{"type":"constrained","contentSize":"720px"}} -->
 <div class="wp-block-group alignwide sf-article-body sf-section" id="the-warning">
 
 <!-- wp:heading {"level":2,"className":"sf-section-header sf-animate sf-animate--fade-up"} -->
@@ -39,7 +39,7 @@
 
 <!-- wp:showcase-flex/image-reveal {"imageUrl":"https://images.unsplash.com/photo-1534224039826-c7a0eda0e6b3?w=1200&q=80","alt":"Aerial view of coastal flooding in Charleston","credit":"Photo: James Whitaker / Reuters","caption":"King tide flooding on Calhoun Street, Charleston, October 2025."} /-->
 
-<!-- wp:group {"align":"wide","className":"sf-article-body sf-section","layout":{"type":"constrained","contentSize":"720px"}} -->
+<!-- wp:group {"anchor":"the-data","align":"wide","className":"sf-article-body sf-section","layout":{"type":"constrained","contentSize":"720px"}} -->
 <div class="wp-block-group alignwide sf-article-body sf-section" id="the-data">
 
 <!-- wp:heading {"level":2,"className":"sf-section-header sf-animate sf-animate--fade-up"} -->
@@ -77,7 +77,7 @@
 
 <!-- wp:showcase-flex/video-background {"title":"Where Land Meets the Rising Tide","text":"Drone footage captured over the Outer Banks reveals the accelerating erosion that threatens miles of coastline. What once seemed like gradual change is now visible year over year."} /-->
 
-<!-- wp:group {"align":"wide","className":"sf-article-body sf-section","layout":{"type":"constrained","contentSize":"720px"}} -->
+<!-- wp:group {"anchor":"the-impact","align":"wide","className":"sf-article-body sf-section","layout":{"type":"constrained","contentSize":"720px"}} -->
 <div class="wp-block-group alignwide sf-article-body sf-section" id="the-impact">
 
 <!-- wp:heading {"level":2,"className":"sf-section-header sf-animate sf-animate--fade-up"} -->
@@ -101,7 +101,7 @@
 
 <!-- wp:showcase-flex/horizontal-scroll /-->
 
-<!-- wp:group {"align":"wide","className":"sf-article-body sf-section","layout":{"type":"constrained","contentSize":"720px"}} -->
+<!-- wp:group {"anchor":"the-response","align":"wide","className":"sf-article-body sf-section","layout":{"type":"constrained","contentSize":"720px"}} -->
 <div class="wp-block-group alignwide sf-article-body sf-section" id="the-response">
 
 <!-- wp:heading {"level":2,"className":"sf-section-header sf-animate sf-animate--fade-up"} -->
@@ -121,7 +121,7 @@
 
 <!-- wp:showcase-flex/pull-quote-animated {"quote":"The cities that thrive in 2050 will be the ones that stopped fighting water and started designing with it. This isn't retreat — it's evolution.","attribution":"Prof. Henk Ovink, Netherlands Special Envoy for International Water Affairs"} /-->
 
-<!-- wp:group {"align":"wide","className":"sf-article-body sf-section","layout":{"type":"constrained","contentSize":"720px"}} -->
+<!-- wp:group {"anchor":"the-future","align":"wide","className":"sf-article-body sf-section","layout":{"type":"constrained","contentSize":"720px"}} -->
 <div class="wp-block-group alignwide sf-article-body sf-section" id="the-future">
 
 <!-- wp:heading {"level":2,"className":"sf-section-header sf-animate sf-animate--fade-up"} -->
@@ -155,31 +155,37 @@
 
 <!-- wp:group {"className":"sf-related-card sf-animate sf-animate--fade-up","layout":{"type":"constrained"}} -->
 <div class="wp-block-group sf-related-card sf-animate sf-animate--fade-up">
+<!-- wp:html -->
 <img class="sf-related-card__image" src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=75" alt="" loading="lazy" width="600" height="338">
 <div class="sf-related-card__body">
 	<div class="sf-related-card__category">Climate Policy</div>
 	<h4 class="sf-related-card__title">The Insurance Crisis No One Is Talking About</h4>
 </div>
+<!-- /wp:html -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"sf-related-card sf-animate sf-animate--fade-up","layout":{"type":"constrained"}} -->
 <div class="wp-block-group sf-related-card sf-animate sf-animate--fade-up">
+<!-- wp:html -->
 <img class="sf-related-card__image" src="https://images.unsplash.com/photo-1504711434969-e33886168d5c?w=600&q=75" alt="" loading="lazy" width="600" height="338">
 <div class="sf-related-card__body">
 	<div class="sf-related-card__category">Infrastructure</div>
 	<h4 class="sf-related-card__title">How Rotterdam Learned to Live With Water</h4>
 </div>
+<!-- /wp:html -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"sf-related-card sf-animate sf-animate--fade-up","layout":{"type":"constrained"}} -->
 <div class="wp-block-group sf-related-card sf-animate sf-animate--fade-up">
+<!-- wp:html -->
 <img class="sf-related-card__image" src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=75" alt="" loading="lazy" width="600" height="338">
 <div class="sf-related-card__body">
 	<div class="sf-related-card__category">Technology</div>
 	<h4 class="sf-related-card__title">AI Models That Predict Block-by-Block Flood Risk</h4>
 </div>
+<!-- /wp:html -->
 </div>
 <!-- /wp:group -->
 
@@ -191,8 +197,16 @@
 
 <!-- wp:group {"align":"full","className":"sf-cta","layout":{"type":"constrained","contentSize":"700px"}} -->
 <div class="wp-block-group alignfull sf-cta">
-<h2 class="sf-cta__title">This Is WordPress. No Decoupled Architecture Required.</h2>
+<!-- wp:heading {"level":2,"className":"sf-cta__title"} -->
+<h2 class="wp-block-heading sf-cta__title">This Is WordPress. No Decoupled Architecture Required.</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"sf-cta__text"} -->
 <p class="sf-cta__text">Every animation, interaction, and visual effect on this page was built with a traditional WordPress block theme. No React frontend. No headless CMS. Just WordPress — at enterprise scale.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
 <a class="sf-cta__button sf-hover-lift" href="https://wpvip.com/contact">Talk to WordPress VIP</a>
+<!-- /wp:html -->
 </div>
 <!-- /wp:group -->

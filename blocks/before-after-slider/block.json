@@ -9,6 +9,7 @@
 	"description": "Draggable comparison slider for two images, proving interactive widgets work in classic themes.",
 	"keywords": ["before", "after", "slider", "comparison", "interactive"],
 	"textdomain": "showcase-flex",
+	"editorScript": "showcase-flex-editor",
 	"attributes": {
 		"beforeImage": { "type": "string", "default": "" },
 		"afterImage": { "type": "string", "default": "" },

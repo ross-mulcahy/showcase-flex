@@ -9,6 +9,7 @@
 	"description": "Grid of animated number counters that animate when scrolled into view.",
 	"keywords": ["counter", "stats", "numbers", "data"],
 	"textdomain": "showcase-flex",
+	"editorScript": "showcase-flex-editor",
 	"attributes": {
 		"counters": {
 			"type": "array",

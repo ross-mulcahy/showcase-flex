@@ -9,6 +9,7 @@
 	"description": "Toggle button that smoothly switches between light and dark colour palettes.",
 	"keywords": ["dark", "light", "mode", "theme", "toggle"],
 	"textdomain": "showcase-flex",
+	"editorScript": "showcase-flex-editor",
 	"supports": { "html": false, "multiple": false },
 	"render": "file:./render.php"
 }

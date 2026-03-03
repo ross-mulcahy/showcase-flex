@@ -9,6 +9,7 @@
 	"description": "Large editorial pull quote with ambient background animations — gradient shift and floating shapes.",
 	"keywords": ["quote", "pullquote", "editorial", "animation"],
 	"textdomain": "showcase-flex",
+	"editorScript": "showcase-flex-editor",
 	"attributes": {
 		"quote": { "type": "string", "default": "" },
 		"attribution": { "type": "string", "default": "" }

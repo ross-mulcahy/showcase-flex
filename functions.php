@@ -58,6 +58,15 @@ add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\\enqueue_editor_ass
  * Register all custom blocks from the /blocks directory.
  */
 function register_blocks(): void {
+	// Shared editor script used by every custom block (referenced via handle in block.json).
+	wp_register_script(
+		'showcase-flex-editor',
+		SHOWCASE_FLEX_URI . '/assets/js/editor.js',
+		[ 'wp-blocks', 'wp-element', 'wp-block-editor', 'wp-server-side-render' ],
+		SHOWCASE_FLEX_VERSION,
+		true
+	);
+
 	$blocks_dir = SHOWCASE_FLEX_DIR . '/blocks';
 	if ( ! is_dir( $blocks_dir ) ) {
 		return;

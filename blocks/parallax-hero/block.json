@@ -9,6 +9,7 @@
 	"description": "Full-bleed parallax hero with Ken Burns zoom, headline, subtitle, and byline.",
 	"keywords": ["hero", "parallax", "banner", "header"],
 	"textdomain": "showcase-flex",
+	"editorScript": "showcase-flex-editor",
 	"attributes": {
 		"imageUrl": { "type": "string", "default": "" },
 		"kicker": { "type": "string", "default": "Investigation" },
