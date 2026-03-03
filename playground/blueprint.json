@@ -1,0 +1,26 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "login": true,
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "git:directory",
+        "url": "https://github.com/ross-mulcahy/showcase-flex",
+        "ref": "main",
+        "path": "."
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "caption": "Installing Showcase Flex theme..."
+      }
+    }
+  ]
+}
