@@ -168,7 +168,7 @@
 <!-- wp:group {"className":"sf-related-card sf-animate sf-animate--fade-up","layout":{"type":"constrained"}} -->
 <div class="wp-block-group sf-related-card sf-animate sf-animate--fade-up">
 <!-- wp:html -->
-<img class="sf-related-card__image" src="https://images.unsplash.com/photo-1504711434969-e33886168d5c?w=600&q=75" alt="" loading="lazy" width="600" height="338">
+<img class="sf-related-card__image" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=75" alt="" loading="lazy" width="600" height="338">
 <div class="sf-related-card__body">
 	<div class="sf-related-card__category">Infrastructure</div>
 	<h4 class="sf-related-card__title">How Rotterdam Learned to Live With Water</h4>

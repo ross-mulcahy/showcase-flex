@@ -17,7 +17,7 @@ if ( empty( $cards ) ) {
 			'chapter' => 'Chapter 2',
 			'title'   => 'Data Meets Policy',
 			'excerpt' => 'When NOAA released its updated coastal flood models, city councils from Miami to Mumbai were forced to reckon with infrastructure plans built on outdated assumptions.',
-			'image'   => 'https://images.unsplash.com/photo-1504711434969-e33886168d5c?w=600&q=75',
+			'image'   => 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=75',
 		],
 		[
 			'chapter' => 'Chapter 3',
@@ -29,7 +29,7 @@ if ( empty( $cards ) ) {
 			'chapter' => 'Chapter 4',
 			'title'   => 'Engineering the Future',
 			'excerpt' => 'Rotterdam\'s approach to living with water has become a blueprint. From floating neighbourhoods to climate-adaptive parks, engineering is meeting ecology halfway.',
-			'image'   => 'https://images.unsplash.com/photo-1513622470222-1faed46f5e5d?w=600&q=75',
+			'image'   => 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=75',
 		],
 		[
 			'chapter' => 'Chapter 5',

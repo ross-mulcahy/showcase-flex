@@ -651,7 +651,7 @@ img, video {
 .sf-video-section__overlay {
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(180deg, rgba(13,17,23,0.5) 0%, rgba(13,17,23,0.85) 100%);
+	background: linear-gradient(180deg, rgba(13,17,23,0.7) 0%, rgba(13,17,23,0.92) 100%);
 	z-index: 1;
 }
 
@@ -670,6 +670,7 @@ img, video {
 	font-weight: 900;
 	line-height: 1.1;
 	margin: 0 0 1.25rem;
+	color: #ffffff;
 }
 
 .sf-video-section__text {
