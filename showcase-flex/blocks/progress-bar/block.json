@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "showcase-flex/progress-bar",
+	"version": "1.0.0",
+	"title": "Reading Progress Bar",
+	"category": "showcase-flex",
+	"icon": "minus",
+	"description": "Thin, branded reading progress bar fixed at the top of the viewport.",
+	"keywords": ["progress", "reading", "scroll"],
+	"textdomain": "showcase-flex",
+	"supports": { "html": false, "multiple": false },
+	"render": "file:./render.php"
+}

@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "showcase-flex/scroll-nav",
+	"version": "1.0.0",
+	"title": "Scroll Navigation",
+	"category": "showcase-flex",
+	"icon": "menu",
+	"description": "Sticky top navigation with section links, active highlighting, and dark mode toggle.",
+	"keywords": ["navigation", "sticky", "menu", "scroll"],
+	"textdomain": "showcase-flex",
+	"attributes": {
+		"brand": { "type": "string", "default": "The Deep Current" },
+		"sections": {
+			"type": "array",
+			"default": [
+				{ "id": "the-warning", "label": "The Warning" },
+				{ "id": "the-data", "label": "The Data" },
+				{ "id": "the-impact", "label": "The Impact" },
+				{ "id": "the-response", "label": "The Response" },
+				{ "id": "the-future", "label": "The Future" }
+			]
+		}
+	},
+	"supports": { "html": false, "multiple": false },
+	"render": "file:./render.php"
+}
