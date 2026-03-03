@@ -112,6 +112,9 @@ function theme_setup(): void {
 
 	// Load theme styles inside the editor iframe so block previews match the front end.
 	add_editor_style( 'assets/css/theme.css' );
+
+	// Neutralise animation/visibility rules that depend on front-end JS.
+	add_editor_style( 'assets/css/editor-overrides.css' );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\theme_setup' );
 

@@ -1,0 +1,80 @@
+/**
+ * Editor overrides — Neutralise front-end animation / visibility rules
+ * that rely on JavaScript (IntersectionObserver, scroll handlers) which
+ * does not run inside the block editor iframe.
+ *
+ * Loaded via add_editor_style() so it applies inside the editor canvas.
+ */
+
+/* --- Animation classes: make everything visible immediately --- */
+.sf-animate {
+	opacity: 1 !important;
+	transform: none !important;
+	filter: none !important;
+	will-change: auto !important;
+	transition: none !important;
+}
+
+/* --- Scroll Navigation: undo fixed positioning + hidden state --- */
+.sf-sticky-nav {
+	position: relative !important;
+	opacity: 1 !important;
+	transform: none !important;
+	top: auto !important;
+	left: auto !important;
+	width: auto !important;
+	z-index: 0 !important;
+}
+
+/* --- Progress Bar: undo fixed positioning --- */
+.sf-progress-bar {
+	position: relative !important;
+	z-index: 0 !important;
+}
+
+/* --- Image Reveal: undo clip-path and blur --- */
+.sf-image-reveal img {
+	clip-path: inset(0) !important;
+	filter: none !important;
+	transition: none !important;
+}
+
+/* --- Horizontal Scroll: collapse the 400vh scroll container --- */
+.sf-horizontal-scroll {
+	height: auto !important;
+}
+
+.sf-horizontal-scroll__sticky {
+	position: relative !important;
+	height: auto !important;
+	overflow-x: auto !important;
+}
+
+/* --- Parallax Hero: cap height for editor, disable Ken Burns --- */
+.sf-parallax-hero {
+	max-height: none !important;
+}
+
+.sf-parallax-hero__media {
+	animation: none !important;
+}
+
+/* --- Video Section: ensure content is visible --- */
+.sf-video-section__content {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+/* --- Pull Quote: ensure shapes and bg don't interfere --- */
+.sf-pull-quote__shape {
+	animation: none !important;
+}
+
+.sf-pull-quote__bg {
+	animation: none !important;
+}
+
+/* --- Before/After Slider: ensure images are visible --- */
+.sf-before-after__overlay {
+	transition: none !important;
+}

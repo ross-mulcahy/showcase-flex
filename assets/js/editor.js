@@ -280,7 +280,7 @@
 			el( 'figure', Object.assign( {}, blockProps, { className: ( blockProps.className || '' ) + ' sf-image-reveal' } ),
 				attrs.imageUrl
 					? el( Fragment, null,
-						el( 'img', { src: attrs.imageUrl, alt: attrs.alt || '', style: { width: '100%', height: 'auto', display: 'block' } } ),
+						el( 'img', { src: attrs.imageUrl, alt: attrs.alt || '', style: { width: '100%', height: 'auto', display: 'block', clipPath: 'inset(0)', filter: 'none' } } ),
 						attrs.credit
 							? el( 'span', { className: 'sf-image-reveal__credit' }, attrs.credit )
 							: null,
@@ -398,7 +398,7 @@
 						? el( 'img', { src: attrs.imageUrl, alt: '', style: { width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 } } )
 						: el( 'div', { style: { width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)' } } )
 				),
-				el( 'div', { className: 'sf-parallax-hero__overlay' } ),
+				el( 'div', { className: 'sf-parallax-hero__overlay', style: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 1 } } ),
 				el( 'div', { className: 'sf-parallax-hero__content', style: { position: 'relative', zIndex: 2 } },
 					attrs.kicker
 						? el( 'span', { className: 'sf-parallax-hero__kicker' }, attrs.kicker )
@@ -477,7 +477,7 @@
 							)
 						)
 				),
-				el( 'div', { className: 'sf-video-section__overlay' } ),
+				el( 'div', { className: 'sf-video-section__overlay', style: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 1 } } ),
 				el( 'div', {
 					className: 'sf-video-section__content',
 					style: { position: 'relative', zIndex: 2 },
@@ -497,7 +497,7 @@
 		var setAttrs   = props.setAttributes;
 		var blockProps = useBlockProps( {
 			className: 'sf-sticky-nav',
-			style: { position: 'relative', zIndex: 0 },
+			style: { position: 'relative', zIndex: 0, opacity: 1, transform: 'none' },
 		} );
 
 		return el( Fragment, null,
