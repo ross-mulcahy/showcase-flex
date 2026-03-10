@@ -12,7 +12,7 @@
       "themeData": {
         "resource": "git:directory",
         "url": "https://github.com/ross-mulcahy/showcase-flex",
-        "ref": "main"
+        "ref": "test"
       },
       "options": {
         "activate": true
